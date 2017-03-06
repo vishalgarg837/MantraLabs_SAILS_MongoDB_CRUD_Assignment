@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			CRUD Web Application
+		</title>
+  	</head>
+	<body>
+		<h1 align="center">Add Student Data</h1>
+			<form align="center" action="/addStudentData" method="POST">
+				<table align="center">
+					<tr>
+						<th align="left">Enter Roll Number</th>
+						<td><input type="text" name="stuRollNum"></input></td>
+					</tr>
+					<tr>
+						<th align="left">Enter First Name</th>
+						<td><input type="text" name="stuFName"></input></td>
+					</tr>
+					<tr>
+						<th align="left">Enter Last Name</th>
+						<td><input type="text" name="stuLName"></input></td>
+					</tr>
+					<tr>
+						<th align="left">Enter Email Id</th>
+						<td><input type="text" name="stuEmail"></input></td>
+					</tr>
+					<tr>
+						<th align="left">Enter Class</th>
+						<td><input type="text" name="stuClass"></input></td>
+					</tr>
+					<tr>
+						<th align="left">Enter Course </th>
+						<td><input type="text" name="stuCourse"></input></td>
+					</tr>
+				</table>
+				<!--Enter Roll Number<input type="text" name="stuRollNum"></input><br>
+				Enter First Name <input type="text" name="stuFName"></input><br>
+				Enter Last Name  <input type="text" name="stuLName"></input><br>
+				Enter Email Id   <input type="text" name="stuEmail"></input><br>
+				Enter Class      <input type="text" name="stuClass"></input><br>
+				Enter Course     <input type="text" name="stuCourse"></input><br>-->
+				<input type="submit" value="Add" style="height:25px; width:100px">
+			</form>
+			<form align="center" action="/showHomePg">
+				<input type="submit" value="Cancel" style="height:25px; width:100px">
+			</form>
+  	</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			Learning NodeJs
+		</title>
+  	</head>
+	<body>
+		<h1 align = "center"><%= title %></h1>
+		<h2 align = "center">Student Details: </h2>
+		<form align = "center" name = "updateForm" action = "/update" method = "POST">
+			<!-- {{#each res}} -->
+			<table align="center">
+					<tr>
+						<th align="left">Roll Number</th>
+						<td><input type = "text" id ="stuRollNum" name = "stuRoll" value="<%= res.rollNum %>" readonly></input></td>
+					</tr>
+					<tr>
+						<th align="left">First Name</th>
+						<td><input type = "text" id = "stuFNameId" name = "stuFName" value="<%= res.firstName %>"></input></td>
+					</tr>
+					<tr>
+						<th align="left">Last Name</th>
+						<td><input type = "text" id = "stuLNameId" name = "stuLName" value="<%= res.lastName %>"></input></td>
+					</tr>
+					<tr>
+						<th align="left">Email Id</th>
+						<td><input type = "text" id = "stuEmailId" name = "stuEmail" value="<%= res.emailId %>"></input></td>
+					</tr>
+					<tr>
+						<th align="left">Class</th>
+						<td><input type = "text" id = "stuClassId" name = "stuClass" value="<%= res.sClass %>"></input></td>
+					</tr>
+					<tr>
+						<th align="left">Course </th>
+						<td><input type = "text" id = "stuCourseId" name = "stuCourse" value="<%= res.course %>"></input></td>
+					</tr>
+				</table>
+			<!--<input type = "text" id ="stuRollNum" name = "stuRoll" value="<%= res.rollNum %>" readonly></input><br>
+			<input type = "text" id = "stuFNameId" name = "stuFName" value="<%= res.firstName %>"></input><br>
+			<input type = "text" id = "stuLNameId" name = "stuLName" value="<%= res.lastName %>"></input><br>
+			<input type = "text" id = "stuEmailId" name = "stuEmail" value="<%= res.emailId %>"></input><br>
+			<input type = "text" id = "stuClassId" name = "stuClass" value="<%= res.sClass %>"></input><br>
+			<input type = "text" id = "stuCourseId" name = "stuCourse" value="<%= res.course %>"></input><br>-->
+			<input type = "submit" value = "Update" style="height:25px; width:100px"/>
+			<!-- {{/each}} -->
+		</form>
+		<form align="center" action="/showHomePg">
+			<input type="submit" value="Cancel" style="height:25px; width:100px">
+		</form>
+  	</body>
+</html>
